@@ -206,10 +206,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 5
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "DistGC"
+Date "2018-04-17"
+Rev "v0.2"
+Comp "Jan Kropidlowski"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -1254,4 +1254,152 @@ F 3 "" H 8500 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8500 6250
+$Comp
+L R_Small R?
+U 1 1 5AD62A96
+P 6050 7000
+F 0 "R?" H 6080 7020 50  0000 L CNN
+F 1 "100k" H 6080 6960 50  0000 L CNN
+F 2 "" H 6050 7000 50  0001 C CNN
+F 3 "" H 6050 7000 50  0001 C CNN
+	1    6050 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 5AD62BED
+P 6050 6550
+F 0 "R?" H 6080 6570 50  0000 L CNN
+F 1 "R_Small" H 6080 6510 50  0000 L CNN
+F 2 "" H 6050 6550 50  0001 C CNN
+F 3 "" H 6050 6550 50  0001 C CNN
+	1    6050 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 6900 6050 6650
+$Comp
+L R_Small R?
+U 1 1 5AD6309B
+P 5250 7000
+F 0 "R?" H 5280 7020 50  0000 L CNN
+F 1 "100k" H 5280 6960 50  0000 L CNN
+F 2 "" H 5250 7000 50  0001 C CNN
+F 3 "" H 5250 7000 50  0001 C CNN
+	1    5250 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 5AD630A1
+P 5250 6550
+F 0 "R?" H 5280 6570 50  0000 L CNN
+F 1 "R_Small" H 5280 6510 50  0000 L CNN
+F 2 "" H 5250 6550 50  0001 C CNN
+F 3 "" H 5250 6550 50  0001 C CNN
+	1    5250 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 6900 5250 6650
+Text GLabel 6050 6200 1    43   Input ~ 0
+UHB
+Wire Wire Line
+	6050 6200 6050 6450
+Text GLabel 5250 6200 1    43   Input ~ 0
+PVU
+Wire Wire Line
+	5250 6200 5250 6450
+$Comp
+L GNDA #PWR?
+U 1 1 5AD63811
+P 5250 7400
+F 0 "#PWR?" H 5250 7150 50  0001 C CNN
+F 1 "GNDA" H 5250 7250 50  0000 C CNN
+F 2 "" H 5250 7400 50  0001 C CNN
+F 3 "" H 5250 7400 50  0001 C CNN
+	1    5250 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 7400 5250 7100
+Wire Wire Line
+	5250 7250 6050 7250
+Wire Wire Line
+	6050 7250 6050 7100
+Connection ~ 5250 7250
+Text GLabel 5550 7350 3    43   Input ~ 0
+uCPVU
+Wire Wire Line
+	5550 7350 5550 6800
+Wire Wire Line
+	5550 6800 5250 6800
+Connection ~ 5250 6800
+Text GLabel 5750 7350 3    43   Input ~ 0
+uCUHB
+Wire Wire Line
+	5750 7350 5750 6800
+Wire Wire Line
+	5750 6800 6050 6800
+Connection ~ 6050 6800
+$Comp
+L Lamp_Neon NE?
+U 1 1 5AD64B92
+P 1950 2300
+F 0 "NE?" H 1975 2450 50  0000 L CNN
+F 1 "Lamp_Neon" H 1975 2150 50  0000 L CNN
+F 2 "" V 1950 2400 50  0001 C CNN
+F 3 "" V 1950 2400 50  0001 C CNN
+	1    1950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth_Protective #PWR?
+U 1 1 5AD64CEF
+P 1950 2800
+F 0 "#PWR?" H 2200 2550 50  0001 C CNN
+F 1 "Earth_Protective" H 2400 2650 50  0001 C CNN
+F 2 "" H 1950 2700 50  0001 C CNN
+F 3 "" H 1950 2700 50  0001 C CNN
+	1    1950 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1250 1950 2100
+Wire Wire Line
+	1950 1250 2200 1250
+Wire Wire Line
+	2200 1250 2200 900 
+Connection ~ 2200 900 
+Wire Wire Line
+	1950 2800 1950 2500
+$Comp
+L Varistor RV?
+U 1 1 5AD65BD0
+P 1550 2300
+F 0 "RV?" V 1675 2300 50  0000 C CNN
+F 1 "60V" V 1425 2300 50  0000 C CNN
+F 2 "" V 1480 2300 50  0001 C CNN
+F 3 "" H 1550 2300 50  0001 C CNN
+	1    1550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2150 1550 1900
+Wire Wire Line
+	1550 1900 1950 1900
+Connection ~ 1950 1900
+$Comp
+L GNDA #PWR?
+U 1 1 5AD65DC5
+P 1550 2800
+F 0 "#PWR?" H 1550 2550 50  0001 C CNN
+F 1 "GNDA" H 1550 2650 50  0000 C CNN
+F 2 "" H 1550 2800 50  0001 C CNN
+F 3 "" H 1550 2800 50  0001 C CNN
+	1    1550 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2800 1550 2450
 $EndSCHEMATC

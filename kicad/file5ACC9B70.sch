@@ -206,10 +206,10 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 5
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "DistGC"
+Date "2018-04-17"
+Rev "v0.2"
+Comp "Jan Kropidlowski"
 Comment1 ""
 Comment2 ""
 Comment3 ""
